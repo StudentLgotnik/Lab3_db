@@ -1,0 +1,1 @@
+ALTER TABLE Capital RENAME COLUMN Population To CapitalPopulation;

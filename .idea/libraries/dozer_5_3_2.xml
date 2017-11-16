@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="dozer-5.3.2">
+    <ANNOTATIONS>
+      <root url="file://D:/Dozer" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/Dozer/dozer-5.3.2/dist/dozer-5.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://D:/Dozer/dozer-5.3.2/site/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://D:/Dozer/dozer-5.3.2/src/main/java" />
+      <root url="file://D:/Dozer/dozer-5.3.2/src/misc/jmx-testengine" />
+      <root url="file://D:/Dozer/dozer-5.3.2/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
