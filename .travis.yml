@@ -1,0 +1,16 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+os:
+  - Windows
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+  - D:/Лабы(2курс)/СУБД/Lab3_db/.gradle
+
