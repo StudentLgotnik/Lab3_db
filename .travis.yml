@@ -7,6 +7,13 @@ jdk:
 branches:
   only:
     - master
+before_install:
+  - cd application
+  - chmod +x gradlew
+
+script:
+  - ./gradlew build
+
 
 cache:
   directories:
