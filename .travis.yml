@@ -8,7 +8,6 @@ branches:
   only:
     - master
 before_install:
-  - cd application
   - git add -f gradle/wrapper/gradle-wrapper.jar
   - chmod +x gradle/wrapper/gradle-wrapper.jar
   - chmod +x gradlew
