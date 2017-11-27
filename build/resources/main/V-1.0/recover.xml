@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="1" author="Kazarin">
+
+        <createTable tableName="Countries">
+            <column name="Country" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Mainland" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Population" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Capital" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TimeZone" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="Continent">
+            <column name="Continent" type="VARCHAR(30)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Climate" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="TimeZone">
+            <column name="TimeZone" type="VARCHAR(30)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Goverment" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="Capital">
+            <column name="Capital" type="VARCHAR(30)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Governor" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Population" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="CountriesEmployer">
+            <column name="Countries" type="VARCHAR(30)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Unemployed" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>
