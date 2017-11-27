@@ -1,4 +1,5 @@
 import Mapper.CapitalDB;
+import io.vertx.core.Vertx;
 import org.dozer.DozerBeanMapper;
 import org.dozer.Mapper;
 import org.junit.Assert;
@@ -18,12 +19,16 @@ public class CapitalTest1 {
 
     //DozerBeanMapper mapper;
     //Mapper mapper;
+    private Vertx vertx;
 
     @Test
     void Test() throws ClassNotFoundException, SQLException {
+
         //mapper = new DozerBeanMapper();
         Capital.getCapitalData();
         Capital capital = Capital.Capitals.get(0);
+
+
         Connection connection = Connections.connect();
         Statement statement = connection.createStatement();
         ResultSet rset = statement.executeQuery("select * from SYSTEM.CAPITAL WHERE CAPITAL = 'Kiev'");
@@ -50,4 +55,6 @@ public class CapitalTest1 {
 
         assertEquals(2, 1 + 1);*/
     }
+
+
 }

@@ -18,6 +18,8 @@ public class CapitalTest2 {
         mapper = new DozerBeanMapper();
         Capital.getCapitalData();
         Capital capital = Capital.Capitals.get(0);
+
+
         Connection connection = Connections.connect();
         Statement statement = connection.createStatement();
         ResultSet rset = statement.executeQuery("select * from SYSTEM.CAPITAL WHERE CAPITAL = 'Kiev'");
